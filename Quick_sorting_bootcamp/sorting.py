@@ -10,6 +10,6 @@ def quick_sorting(arr):
         return quick_sorting(left) + [pivot] + quick_sorting(right)
 
 
-array = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+array = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 10]
 sorted_array = quick_sorting(array)
 print(sorted_array)
