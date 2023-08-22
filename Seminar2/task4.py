@@ -22,3 +22,5 @@ max_weight = max(weights)
 
 print(min_weight, max_weight)
 
+
+

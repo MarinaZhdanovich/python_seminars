@@ -20,9 +20,9 @@ Output: 2
 """
 days = int(input("Введите количество дней: "))
 temperatures = (list(map(int, input("Введите температуры через пробел: ").split())))
-
-max_days = 0
-current = 0
+                #list результаты хранятся в виде списка
+max_days = 0    #map(int, ...) применяет функцию int к каждому элементу полученного списка
+current = 0     #split() для разделения строки на список отдельных значений на основе пробелов.
 
 for i in temperatures:
     if i > 0:
