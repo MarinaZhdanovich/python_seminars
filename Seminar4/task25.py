@@ -9,14 +9,14 @@ Output: a a_1 a_2 b c a_3 a_4 d c_1 d_1 d_2
 .split()
 """
 
-lst = input("Введите символы через пробел: ").split()
-res = {}   # СЛОВАРЬ, отслеживает количество повторений каждой буквы
-for i in lst:
-    if i in res:
-        print(f"{i}_{res[i]}", end=' ')
-    else:
-        print(i, end=' ')
-    res[i] = res.get(i, 0) + 1  #oбновляется ЗНАЧЕНИЕ словаря, ключ прежний
+# lst = input("Введите символы через пробел: ").split()
+# res = {}   # СЛОВАРЬ, отслеживает количество повторений каждой буквы
+# for i in lst:
+#     if i in res:
+#         print(f"{i}_{res[i]}", end=' ')
+#     else:
+#         print(i, end=' ')
+#     res[i] = res.get(i, 0) + 1  #oбновляется ЗНАЧЕНИЕ словаря, ключ прежний
 
 
 # dictionary.get(key, default_value)
@@ -27,3 +27,11 @@ for i in lst:
 # Если ключ i существует, то get вернет значение,если ключ i отсутствует в словаре, метод вернет значение по умолчанию,
 # указанное вторым аргументом (в данном случае, это 0).
 
+
+n = input("Введите символы через пробел: ").split()
+for i in range(len(n)):
+    s = n[:i]
+    if s.count(n[i]) == 0:
+        print(n[i], end=" ")
+    else:
+        print(f"{n[i]}_{s.count(n[i])}", end=" ")
