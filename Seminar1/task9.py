@@ -1,3 +1,3 @@
-name = "Ageing Sterilised 12+"
+name = "Sterilised 37"
 
 print(name.upper())
