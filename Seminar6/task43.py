@@ -12,6 +12,7 @@
 """
 
 lst = [1, 2, 3, 2, 3]
+# lst = [1, 2, 1, 2, 2, 2, 3, 4] - 7 пар
 counter = 0
 for i in range(len(lst)):
     for j in range(i + 1, len(lst)):
