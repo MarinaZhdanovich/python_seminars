@@ -1,3 +1,3 @@
-name = "Mini Starter Mother & Babydog"
+name = "Mother & Babycat"
 
 print(name.upper())
