@@ -25,9 +25,9 @@ def write_data(nm):
     str_new2 = input('Имя: ')
     str_new3 = input('Отчество: ')
     str_new4 = input('Телефон: ')
-    str_new = '\n' + str_new1 + ', ' + str_new2 + ', ' + str_new3 + ', ' + str_new4
+    str_new = str_new1 + ', ' + str_new2 + ', ' + str_new3 + ', ' + str_new4
     with open(nm, 'a', encoding='utf8') as txt_file:
-        txt_file.write(str_new)
+        txt_file.write(str_new + '\n')
 
 
 def find_item(nm):
