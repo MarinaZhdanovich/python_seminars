@@ -63,6 +63,6 @@ def sort_data(nm):
 
 
 # readall("data.txt")
-# write_data("data.txt")
+write_data("data.txt")
 # find_item("data.txt")
 # sort_data()
