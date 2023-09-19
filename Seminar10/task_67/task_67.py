@@ -12,8 +12,8 @@ import seaborn as sns
 penguins = sns.load_dataset("penguins")
 
 
-def f(row):
-    val = ''
+def func(row):
+    val = '' # or None
     res = random.randint(1, 60)
 
     if res < 35:
@@ -27,7 +27,7 @@ def f(row):
 
 
 # 1 or ‘columns’: apply function to each row.
-penguins['len'] = penguins.apply(f, axis=1)
+penguins['len'] = penguins.apply(func, axis=1)
 
 # view DataFrame
 print(penguins)

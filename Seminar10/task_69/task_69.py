@@ -1,6 +1,6 @@
 """
 Изобразить гистограмму по flipper_length_mm
-с оттенком height_group - не было колонки. Сделать анализ
+с оттенком height_group - колонку создали в 67 задаче.
 """
 
 import seaborn as sns
